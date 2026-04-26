@@ -1,4 +1,4 @@
-# Cokket - Backend E-commerce
+# Kokket - Backend E-commerce
 
 Backend API pour une plateforme e-commerce construite avec Express.js, Sequelize et MySQL.
 
@@ -8,7 +8,6 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
 
 - **Node.js** (version 14 ou supérieure) - [Télécharger](https://nodejs.org/)
 - **npm** (généralement inclus avec Node.js)
-- **MySQL** (version 5.7 ou supérieure) - [Télécharger](https://www.mysql.com/downloads/)
 
 ## Installation et Lancement
 
@@ -33,7 +32,7 @@ Créez un fichier `.env` à la racine du projet en copiant le fichier `.env.exam
 cp .env.example .env
 ```
 
-Modifiez ensuite le fichier `.env` avec vos identifiants MySQL :
+Modifiez ensuite le fichier `.env` avec vos identifiants MySQL que vous pouvez generer sur [Panel agh](https://panel.agh.edu.pl) si vous n'avez pas mysql en local:
 
 ```env
 MYSQL_HOST=localhost
@@ -50,24 +49,7 @@ MYSQL_DATABASE=e_commerce_db
 - `MYSQL_PASSWORD` : Votre mot de passe MySQL
 - `MYSQL_DATABASE` : Le nom de la base de données (sera créée automatiquement)
 
-### 4. Vérifier que MySQL est en cours d'exécution
-
-Assurez-vous que le serveur MySQL est démarré :
-
-**Sur macOS avec Homebrew :**
-```bash
-mysql.server start
-```
-
-**Sur Linux (Ubuntu/Debian) :**
-```bash
-sudo service mysql start
-```
-
-**Sur Windows :**
-- Utilisez MySQL Workbench ou démarrez le service MySQL via Services
-
-### 5. Lancer le serveur
+### 4. Lancer le serveur
 
 ```bash
 npm start
