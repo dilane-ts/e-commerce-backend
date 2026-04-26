@@ -1,0 +1,9 @@
+module.exports = (sequelize, Sequelize) => {
+    const OrderItem = sequelize.define("order_items", {
+        quantity: {
+            type: Sequelize.INTEGER
+        }
+    })  
+
+    return OrderItem
+}
